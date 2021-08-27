@@ -6,7 +6,6 @@ body {
   background: #f2f2f2;
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
-  box-sizing: border-box;
 }
 
 li a {
@@ -148,8 +147,8 @@ nav ul.primary-nav {
   text-shadow: 5px 5px rgba(0, 0, 0, 0.3);
 }
 .skills-section .skills {
-  width: 200px;
-  margin: 60px auto;
+  max-width: 1024px;
+  margin: 20px auto;
   color: #fff;
 }
 .skills-section .skills li {
@@ -162,12 +161,12 @@ nav ul.primary-nav {
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 3px;
   overflow: hidden;
-  box-shadow: 0 0 10px #2187e7b3;
+  box-shadow: 0 0 10px #eece1a;
 }
 .skills-section .skills .bar span {
   height: 2px;
   float: left;
-  background: #2187e7;
+  background: #eece1a;
 }
 .skills-section .skills .bar .html {
   width: 90%;
@@ -376,7 +375,7 @@ footer .container img {
     margin-bottom: 20vh;
   }
   .hero .container .left-col {
-    margin: 3em 3em 0 5em;
+    margin: 5em 3em 0 0em;
   }
   .hero .container .left-col p {
     width: 100%;
@@ -387,20 +386,6 @@ footer .container img {
   }
   .hero .container .hero-img {
     width: auto;
-  }
-
-  .skills-section .skills {
-    width: 600px;
-  }
-}
-@media only screen and (min-width: 1080px) {
-  .container {
-    max-width: 1080px;
-    margin: 0 auto;
-  }
-
-  .skills-section .skills {
-    width: 800px;
   }
 
   .project-section div {
@@ -415,6 +400,12 @@ footer .container img {
   .project-section div .project p {
     font-size: 0.875rem;
     line-height: 1.25;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .container {
+    max-width: 1080px;
+    margin: 0 auto;
   }
 
   .contact-section {

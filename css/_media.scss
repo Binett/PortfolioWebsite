@@ -39,7 +39,7 @@
     margin-bottom: 20vh;
 
     .left-col {
-      margin: 3em 3em 0 5em;
+      margin: 5em 3em 0 0em;
       p {
         width: 100%;
       }
@@ -52,23 +52,6 @@
     .hero-img {
       width: auto;
     }
-  }
-
-  .skills-section .skills {
-    width: 600px;
-  }
-}
-
-// Desktop View
-
-@media only screen and (min-width: 1080px) {
-  .container {
-    max-width: 1080px;
-    margin: 0 auto;
-  }
-
-  .skills-section .skills {
-    width: 800px;
   }
 
   .project-section div {
@@ -85,6 +68,17 @@
       }
     }
   }
+
+
+}
+
+// Desktop View
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    max-width: 1080px;
+    margin: 0 auto;
+  }  
 
   .contact-section {
     border-radius: 5px;
