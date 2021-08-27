@@ -258,11 +258,12 @@ nav ul.primary-nav {
 /*------------------------------------------*/
 .contact-section input,
 .contact-section textarea {
-  width: 85%;
+  width: 100%;
   padding: 0.8em;
   margin-bottom: 1em;
   border-radius: 0.3em;
   border: 1px solid gray;
+  box-sizing: border-box;
 }
 .contact-section .contact-left,
 .contact-section .contact-right {
@@ -275,16 +276,13 @@ nav ul.primary-nav {
 }
 .contact-section .contact-left input[type=submit] {
   background-color: #444;
-  color: white;
-  font-weight: bold;
-  font-size: 1.3em;
-  border: none;
-  margin-bottom: 5em;
-  border-radius: 5em;
+  color: #fff;
   display: inline-block;
   padding: 0.8em 2em;
-  width: unset;
   cursor: pointer;
+  max-width: 200px;
+  font-size: 1em;
+  font-weight: bold;
 }
 .contact-section .contact-right ul {
   padding-left: 0;
@@ -306,17 +304,10 @@ nav ul.primary-nav {
   padding: 6px 5px;
   border-radius: 3px;
   border: none;
-  outline: none;
-  color: #444;
-  font-weight: 400;
-  font-size: 16px;
-  margin-left: 5px;
-  background: #eece1a;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  transition: all 0.3s ease;
+  color: #fff;
+  font-size: 1em;
+  background: #444;
+  font-weight: bold;
 }
 
 /*------------------------------------------*/
@@ -324,6 +315,7 @@ nav ul.primary-nav {
 /*------------------------------------------*/
 footer {
   background: #444;
+  color: #fff;
 }
 
 footer .container {
