@@ -393,10 +393,6 @@ footer .container img {
     font-size: 1em;
     width: 90%;
   }
-  .hero .container .left-col:hover {
-    transform: rotate(720deg) translateX(-3px);
-    transition: all 1s ease-out;
-  }
   .hero .container .hero-img {
     width: auto;
   }
