@@ -260,7 +260,7 @@ nav {
 /*              6. ContactSection           */
 /*------------------------------------------*/
 
-.contact-section { 
+.contact-section {
   input,
   textarea {
     width: 85%;
@@ -269,6 +269,17 @@ nav {
     border-radius: 0.3em;
     border: 1px solid gray;
   }
+
+  .contact-left,
+  .contact-right {
+    background: #fff;
+    max-width: 400px;
+    margin: 120px auto;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  }
+
   .contact-left {
     input[type="submit"] {
       background-color: $primary-color;
@@ -284,29 +295,62 @@ nav {
       cursor: pointer;
     }
   }
+
+  .contact-right {
+    ul {
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 8px;
+      background: #f2f2f2;
+      border-radius: 3px;
+      padding: 10px 15px;
+      overflow: hidden;
+      word-wrap: break-word;
+      text-align: left;
+    }
+    .wrapper .todoList {
+      max-height: 250px;
+      overflow-y: auto;
+    }
+  }
+  button {
+    padding: 6px 5px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: $primary-color;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 5px;
+    background: $secondary-color;
+    user-select: none;
+    transition: all 0.3s ease;
+  }
 }
 
 /*------------------------------------------*/
 /*              7. Footer                   */
 /*------------------------------------------*/
 
-footer{
+footer {
   background: $primary-color;
-  
 }
-footer .container{
+footer .container {
   display: flex;
   justify-content: space-between;
   text-align: left;
   flex-direction: row-reverse;
-  h3,h1,p{
+  h3,
+  h1,
+  p {
     margin-bottom: 0;
     margin-top: 0;
   }
-  a{
+  a {
     cursor: pointer;
   }
- 
+
   img {
     width: 3em;
     height: 3em;

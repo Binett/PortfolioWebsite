@@ -264,6 +264,15 @@ nav ul.primary-nav {
   border-radius: 0.3em;
   border: 1px solid gray;
 }
+.contact-section .contact-left,
+.contact-section .contact-right {
+  background: #fff;
+  max-width: 400px;
+  margin: 120px auto;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
 .contact-section .contact-left input[type=submit] {
   background-color: #444;
   color: white;
@@ -276,6 +285,38 @@ nav ul.primary-nav {
   padding: 0.8em 2em;
   width: unset;
   cursor: pointer;
+}
+.contact-section .contact-right ul {
+  padding-left: 0;
+}
+.contact-section .contact-right li {
+  margin-bottom: 8px;
+  background: #f2f2f2;
+  border-radius: 3px;
+  padding: 10px 15px;
+  overflow: hidden;
+  word-wrap: break-word;
+  text-align: left;
+}
+.contact-section .contact-right .wrapper .todoList {
+  max-height: 250px;
+  overflow-y: auto;
+}
+.contact-section button {
+  padding: 6px 5px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  color: #444;
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 5px;
+  background: #eece1a;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transition: all 0.3s ease;
 }
 
 /*------------------------------------------*/
@@ -291,7 +332,9 @@ footer .container {
   text-align: left;
   flex-direction: row-reverse;
 }
-footer .container h3, footer .container h1, footer .container p {
+footer .container h3,
+footer .container h1,
+footer .container p {
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -395,55 +438,7 @@ footer .container img {
     justify-content: space-between;
   }
 
-  .contact-left {
-    flex-basis: 50%;
-    background: #fff;
-    max-width: 400px;
-    margin: 120px auto;
-    padding: 25px;
-    border-radius: 5px;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-  }
-
   .contact-right {
     flex-basis: 50%;
-    background: #fff;
-    max-width: 400px;
-    margin: 120px auto;
-    padding: 25px;
-    border-radius: 5px;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-  }
-  .contact-right ul {
-    padding-left: 0;
-  }
-  .contact-right li {
-    margin-bottom: 8px;
-    background: #f2f2f2;
-    border-radius: 3px;
-    padding: 10px 15px;
-    overflow: hidden;
-    word-wrap: break-word;
-    text-align: left;
-  }
-  .contact-right button {
-    padding: 6px 10px;
-    border-radius: 3px;
-    border: none;
-    outline: none;
-    color: #444;
-    font-weight: 400;
-    font-size: 16px;
-    margin-left: 5px;
-    background: #eece1a;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    transition: all 0.3s ease;
-  }
-  .contact-right .wrapper .todoList {
-    max-height: 250px;
-    overflow-y: auto;
   }
 }/*# sourceMappingURL=main.css.map */
