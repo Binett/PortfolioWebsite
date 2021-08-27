@@ -104,7 +104,7 @@ let lon;
 let lat;
 
 window.addEventListener("load", () => {
-  let api = `http://api.openweathermap.org/data/2.5/weather?lat=36.435784&lon=28.2041933&appid=00154f1b454735ef4a14bdff2291f164`;
+  let api = `https://api.openweathermap.org/data/2.5/weather?lat=36.435784&lon=28.2041933&appid=00154f1b454735ef4a14bdff2291f164`;
   getWeather(api);
 });
 
@@ -113,7 +113,7 @@ iconBtn.addEventListener("click", () => {
     navigator.geolocation.getCurrentPosition((pos) => {
       lat = pos.coords.latitude;
       lon = pos.coords.longitude;
-      let api = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=00154f1b454735ef4a14bdff2291f164`;
+      let api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=00154f1b454735ef4a14bdff2291f164`;
       getWeather(api);
     });
   }
