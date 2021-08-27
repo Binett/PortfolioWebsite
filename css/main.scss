@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+/*------------------------------------------*/
+/*              1. GeneralSettings          */
+/*------------------------------------------*/
+
+$primary-color: #444;
+$secondary-color: #eece1a;
+$accent-color: #fff;
+
+body {
+  background: #f2f2f2;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+li {
+  a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.5em;
+    font-size: 1.3em;
+    text-align: right;
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+}
+.text-secondary {
+  color: $secondary-color;
+}
+
+/*------------------------------------------*/
+/*              2. NavBar                   */
+/*------------------------------------------*/
+
+.navbar {
+  position: fixed;
+  background: rgb(58, 57, 57);
+  width: 100%;
+  z-index: 999;
+  border: 1px solid #000;
+
+  .logo {
+    margin: auto 0;
+    text-decoration: none;
+    font-weight: bold;
+    color: $accent-color;
+    font-size: 1.2em;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 1em;
+  }
+
+  .mobile-menu {
+    position: absolute;
+    z-index: 1000;
+    right: 25px;
+    top: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+
+    .btn-line {
+      width: 28px;
+      height: 3px;
+      margin: 0 0 5px 0;
+      background: $accent-color;
+      transition: all 0.5s ease-out;
+    }
+    &.close {
+      transform: rotate(180deg);
+
+      .btn-line {
+        //Line 1 - Rotate
+        &:nth-child(1) {
+          transform: rotate(45deg) translate(5px, 5px);
+        }
+        //Line 2 - Hide
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        //Line 3 - Rotate
+        &:nth-child(3) {
+          transform: rotate(-45deg) translate(7px, -6px);
+        }
+      }
+    }
+  }
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: $primary-color;
+  height: 100vh;
+  padding: 1em;
+  opacity: 0.95;
+  display: none;
+  &.show {
+    display: block;
+  }
+  ul.primary-nav {
+    margin-top: 5em;
+  }
+}
+
+/*------------------------------------------*/
+/*              3. HeroSection              */
+/*------------------------------------------*/
+
+.hero {
+  text-align: center;
+
+  .left-col {
+    .subhead {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: grey;
+      letter-spacing: 0.3em;
+    }
+    .icons {
+      margin-top: 1rem;
+      a {
+        padding: 0.4rem;
+
+        &:hover {
+          color: $secondary-color;
+          transition: all 0.5s ease-out;
+        }
+      }
+    }
+  }
+}
+.hero-img {
+  width: 70%;
+  margin-top: 3em;
+  border-radius: 50%;
+}
+
+/*------------------------------------------*/
+/*              4. SkillSection             */
+/*------------------------------------------*/
+
+.skills-section {
+  background: $primary-color;
+
+  h1 {
+    font-size: 4rem;
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .skills {
+    width: 200px;
+    margin: 60px auto;
+    color: $accent-color;
+    li {
+      margin: 20px 0;
+    }
+    .bar {
+      background: #353b48;
+      display: block;
+      height: 2px;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      border-radius: 3px;
+      overflow: hidden;
+      box-shadow: 0 0 10px #2187e7b3;
+
+      span {
+        height: 2px;
+        float: left;
+        background: #2187e7;
+      }
+      .html {
+        width: 90%;
+        animation: html 2s;
+      }
+      .css {
+        width: 65%;
+        animation: css 2s;
+      }
+      .javascript {
+        width: 50%;
+        animation: javascript 2s;
+      }
+      @keyframes html {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 90%;
+        }
+      }
+      @keyframes css {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 65%;
+        }
+      }
+      @keyframes javascript {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+/*------------------------------------------*/
+/*              5. ProjectSection           */
+/*------------------------------------------*/
+
+.project-section {
+  background: #f2f2f2;
+  color: $accent-color;
+
+  div {
+    text-align: center;
+    padding: 2em 0.1em;
+    border-radius: 1em;
+    margin-bottom: 2em;
+
+    .project {
+      background: $primary-color;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+/*------------------------------------------*/
+/*              6. ContactSection           */
+/*------------------------------------------*/
+
+.contact-section { 
+  input,
+  textarea {
+    width: 85%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border-radius: 0.3em;
+    border: 1px solid gray;
+  }
+  .contact-left {
+    input[type="submit"] {
+      background-color: $primary-color;
+      color: white;
+      font-weight: bold;
+      font-size: 1.3em;
+      border: none;
+      margin-bottom: 5em;
+      border-radius: 5em;
+      display: inline-block;
+      padding: 0.8em 2em;
+      width: unset;
+      cursor: pointer;
+    }
+  }
+}
+
+/*------------------------------------------*/
+/*              7. Footer                   */
+/*------------------------------------------*/
+
+footer{
+  background: $primary-color;
+  
+}
+footer .container{
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  flex-direction: row-reverse;
+  h3,h1,p{
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  a{
+    cursor: pointer;
+  }
+ 
+  img {
+    width: 3em;
+    height: 3em;
+  }
+}
+
+@import "media";

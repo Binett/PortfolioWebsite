@@ -1,0 +1,449 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+/*------------------------------------------*/
+/*              1. GeneralSettings          */
+/*------------------------------------------*/
+body {
+  background: #f2f2f2;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+li a:hover {
+  font-weight: bold;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+a {
+  color: #444;
+  text-decoration: none;
+}
+
+.text-secondary {
+  color: #eece1a;
+}
+
+/*------------------------------------------*/
+/*              2. NavBar                   */
+/*------------------------------------------*/
+.navbar {
+  position: fixed;
+  background: #3a3939;
+  width: 100%;
+  z-index: 999;
+  border: 1px solid #000;
+}
+.navbar .logo {
+  margin: auto 0;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.2em;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 1em;
+}
+.navbar .mobile-menu {
+  position: absolute;
+  z-index: 1000;
+  right: 25px;
+  top: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.navbar .mobile-menu .btn-line {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: #fff;
+  transition: all 0.5s ease-out;
+}
+.navbar .mobile-menu.close {
+  transform: rotate(180deg);
+}
+.navbar .mobile-menu.close .btn-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.navbar .mobile-menu.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+.navbar .mobile-menu.close .btn-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: #444;
+  height: 100vh;
+  padding: 1em;
+  opacity: 0.95;
+  display: none;
+}
+nav.show {
+  display: block;
+}
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+/*------------------------------------------*/
+/*              3. HeroSection              */
+/*------------------------------------------*/
+.hero {
+  text-align: center;
+}
+.hero .left-col .subhead {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: grey;
+  letter-spacing: 0.3em;
+}
+.hero .left-col .icons {
+  margin-top: 1rem;
+}
+.hero .left-col .icons a {
+  padding: 0.4rem;
+}
+.hero .left-col .icons a:hover {
+  color: #eece1a;
+  transition: all 0.5s ease-out;
+}
+
+.hero-img {
+  width: 70%;
+  margin-top: 3em;
+  border-radius: 50%;
+}
+
+/*------------------------------------------*/
+/*              4. SkillSection             */
+/*------------------------------------------*/
+.skills-section {
+  background: #444;
+}
+.skills-section h1 {
+  font-size: 4rem;
+  text-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+}
+.skills-section .skills {
+  width: 200px;
+  margin: 60px auto;
+  color: #fff;
+}
+.skills-section .skills li {
+  margin: 20px 0;
+}
+.skills-section .skills .bar {
+  background: #353b48;
+  display: block;
+  height: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #2187e7b3;
+}
+.skills-section .skills .bar span {
+  height: 2px;
+  float: left;
+  background: #2187e7;
+}
+.skills-section .skills .bar .html {
+  width: 90%;
+  -webkit-animation: html 2s;
+          animation: html 2s;
+}
+.skills-section .skills .bar .css {
+  width: 65%;
+  -webkit-animation: css 2s;
+          animation: css 2s;
+}
+.skills-section .skills .bar .javascript {
+  width: 50%;
+  -webkit-animation: javascript 2s;
+          animation: javascript 2s;
+}
+@-webkit-keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@-webkit-keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+@-webkit-keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+/*------------------------------------------*/
+/*              5. ProjectSection           */
+/*------------------------------------------*/
+.project-section {
+  background: #f2f2f2;
+  color: #fff;
+}
+.project-section div {
+  text-align: center;
+  padding: 2em 0.1em;
+  border-radius: 1em;
+  margin-bottom: 2em;
+}
+.project-section div .project {
+  background: #444;
+}
+.project-section div img {
+  width: 100%;
+}
+
+/*------------------------------------------*/
+/*              6. ContactSection           */
+/*------------------------------------------*/
+.contact-section input,
+.contact-section textarea {
+  width: 85%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border-radius: 0.3em;
+  border: 1px solid gray;
+}
+.contact-section .contact-left input[type=submit] {
+  background-color: #444;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+  border: none;
+  margin-bottom: 5em;
+  border-radius: 5em;
+  display: inline-block;
+  padding: 0.8em 2em;
+  width: unset;
+  cursor: pointer;
+}
+
+/*------------------------------------------*/
+/*              7. Footer                   */
+/*------------------------------------------*/
+footer {
+  background: #444;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  flex-direction: row-reverse;
+}
+footer .container h3, footer .container h1, footer .container p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+footer .container a {
+  cursor: pointer;
+}
+footer .container img {
+  width: 3em;
+  height: 3em;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 180px auto;
+  }
+
+  .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: flex;
+  }
+  .navbar nav a {
+    color: #fff;
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+
+  .hero .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 20vh;
+  }
+  .hero .container .left-col {
+    margin: 3em 3em 0 5em;
+  }
+  .hero .container .left-col p {
+    width: 100%;
+  }
+  .hero .container .left-col h1 {
+    font-size: 1em;
+    width: 90%;
+  }
+  .hero .container .left-col:hover {
+    transform: rotate(720deg) translateX(-3px);
+    transition: all 1s ease-out;
+  }
+  .hero .container .hero-img {
+    width: auto;
+  }
+
+  .skills-section .skills {
+    width: 600px;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .container {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+
+  .skills-section .skills {
+    width: 800px;
+  }
+
+  .project-section div {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+  }
+  .project-section div .project {
+    width: 30%;
+    margin-bottom: 30px;
+  }
+  .project-section div .project p {
+    font-size: 0.875rem;
+    line-height: 1.25;
+  }
+
+  .contact-section {
+    border-radius: 5px;
+  }
+  .contact-section .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contact-left {
+    flex-basis: 50%;
+    background: #fff;
+    max-width: 400px;
+    margin: 120px auto;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-right {
+    flex-basis: 50%;
+    background: #fff;
+    max-width: 400px;
+    margin: 120px auto;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  .contact-right ul {
+    padding-left: 0;
+  }
+  .contact-right li {
+    margin-bottom: 8px;
+    background: #f2f2f2;
+    border-radius: 3px;
+    padding: 10px 15px;
+    overflow: hidden;
+    word-wrap: break-word;
+    text-align: left;
+  }
+  .contact-right button {
+    padding: 6px 10px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: #444;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 5px;
+    background: #eece1a;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    transition: all 0.3s ease;
+  }
+  .contact-right .wrapper .todoList {
+    max-height: 250px;
+    overflow-y: auto;
+  }
+}/*# sourceMappingURL=main.css.map */

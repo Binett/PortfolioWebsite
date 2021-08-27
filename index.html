@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my portfolio</title>
+    <script src="https://kit.fontawesome.com/3d57f09c80.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Tobias <span class="text-secondary">Binett</span></a>
+            <div class="mobile-menu">
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+            </div>
+            <nav class="nav">
+                <ul class="primary-nav">
+                    <li class="nav-item"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="#skills">Skills</a></li>
+                    <li class="nav-item"><a href="#projects">Projects</a></li>
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">About
+                    <span class="text-secondary">ME</span>
+                </p>
+                <p class="subhead">Tobias is my name im studiying to become a webdeveloper</p>
+                <div class="icons">
+                    <a href="#">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tobias-binett-9533a41bb/" target="_blank">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="https://github.com/Binett" target="_blank">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+            <img src="images/self.png" class="hero-img" alt="Tobias Binett">
+        </div>
+    </section>
+
+
+    <section class="skills-section" id="skills">
+        <div class="skills">
+            <h1>SKILLS</h1>
+            <li>
+                <h3>HTML5</h3><span class="bar"><span class="html"></span></span>
+            </li>
+
+            <li>
+                <h3>CSS3</h3><span class="bar"><span class="css"></span></span>
+            </li>
+
+            <li>
+                <h3>JavaScript</h3><span class="bar"><span class="javascript"></span></span>
+            </li>
+        </div>
+    </section>
+
+    <section class="project-section" id="projects">
+        <div class="container">
+            <div class="project">
+                <img src="images/project1.jpg" alt="project example">
+                <p>Exampel image for projects in .NET using C#</p>
+            </div>
+            <div class="project">
+                <img src="/images/project2.jpg" alt="project example">
+                <p>Exampel image for projects in .NET using C#</p>
+            </div>
+            <div class="project">
+                <img src="/images/project3.jpg" alt="project example">
+                <p>Exampel image for projects in .NET using C#</p>
+            </div>
+            <div class="project">
+                <img src="/images/project3.jpg" alt="project example">
+                <p>Exampel image for projects in .NET using C#</p>
+            </div>
+            <div class="project">
+                <img src="/images/project3.jpg" alt="project example">
+                <p>Exampel image for projects in .NET using C#</p>
+            </div>
+            <div class="project">
+                <img src="/images/project3.jpg" alt="project example">
+                <p>Exampel image for projects in .NET using C#</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="container">          
+            <div class="contact-right">
+                <div class="wrapper">
+                    <h2>Todo App</h2>
+                    <div class="input-field">
+                        <label for="add-todo">Add your todo</label>
+                        <input type="text" name="add-todo">
+                        <button><i class="fas fa-plus"></i></button>
+                    </div>
+                    <ul class="todo-list">
+                        <li><span><i class="fas fa-trash"></i></span></li>
+                    </ul>
+                    <div class="footer">
+                        <span>You have <span class="pending-tasks"></span> pending tasks</span>
+                        <button>Clear all</button>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-left">
+                <h2>Contact</h2>
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" style="resize:none"></textarea>
+                    <input type="submit" class="send-message-cta" value="Send message">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="weather-icons">
+                <a class="weather-icon"><img src="images/weather-icons/unknown.png" alt="Weather Icon"></a>
+                </div>
+            <div class="location">
+                <h1 class="location-name">location</h1>               
+            </div>
+            <div class="temperature">
+                <h3 class="temperature-degree">10°C</h3>
+                <p class="overall-description">its hot</p>
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="scripts/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+//Tablet View
+@media only screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 180px auto;
+  }
+
+  .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+
+    ul {
+      display: flex;
+    }
+    a {
+      color: $accent-color;
+      font-size: 0.9em;
+      font-weight: bold;
+    }
+
+    ul.primary-nav {
+      margin: 0;
+    }
+  }
+
+  .hero .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 20vh;
+
+    .left-col {
+      margin: 3em 3em 0 5em;
+      p {
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 1em;
+        width: 90%;
+      }
+      &:hover {
+        transform: rotate(720deg) translateX(-3px);
+        transition: all 1s ease-out;
+      }
+    }
+    .hero-img {
+      width: auto;
+    }
+  }
+
+  .skills-section .skills {
+    width: 600px;
+  }
+}
+
+// Desktop View
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  
+  .skills-section .skills {
+    width: 800px;
+  }
+
+  .project-section div {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+
+    .project {
+      width: 30%;
+      margin-bottom: 30px;
+      p {
+        font-size: 0.875rem;
+        line-height: 1.25;
+      }
+    }
+  }
+
+  .contact-section {
+    border-radius: 5px;
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+  .contact-left {
+    flex-basis: 50%;
+    background: #fff;
+    max-width: 400px;
+    margin: 120px auto;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  }
+
+  .contact-right {
+    flex-basis: 50%;
+    background: #fff;
+    max-width: 400px;
+    margin: 120px auto;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    ul{
+      padding-left: 0;
+    }
+    li{      
+      margin-bottom: 8px;
+      background: #f2f2f2;
+      border-radius: 3px;
+      padding: 10px 15px;
+      overflow: hidden;
+      word-wrap: break-word;
+      text-align: left;      
+    }
+    button{
+      padding: 6px 10px;
+      border-radius: 3px;
+      border: none;
+      outline: none;
+      color: $primary-color;
+      font-weight: 400;
+      font-size: 16px;
+      margin-left: 5px;
+      background: $secondary-color;      
+      user-select: none;
+      transition: all 0.3s ease;
+    }
+    .wrapper .todoList{
+      max-height: 250px;
+      overflow-y: auto;
+    }
+  }
+}
