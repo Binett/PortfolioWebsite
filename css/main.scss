@@ -25,6 +25,7 @@ li {
     text-align: right;
     &:hover {
       font-weight: bold;
+      color: $secondary-color;
     }
   }
 }
@@ -89,16 +90,13 @@ a {
     &.close {
       transform: rotate(180deg);
 
-      .btn-line {
-        //Line 1 - Rotate
+      .btn-line {        
         &:nth-child(1) {
           transform: rotate(45deg) translate(5px, 5px);
-        }
-        //Line 2 - Hide
+        }       
         &:nth-child(2) {
           opacity: 0;
-        }
-        //Line 3 - Rotate
+        }        
         &:nth-child(3) {
           transform: rotate(-45deg) translate(7px, -6px);
         }
@@ -118,13 +116,14 @@ nav {
   padding: 1em;
   opacity: 0.95;
   display: none;
-  &.show {
+  &.show{
     display: block;
   }
   ul.primary-nav {
     margin-top: 5em;
   }
 }
+
 
 /*------------------------------------------*/
 /*              3. HeroSection              */
@@ -164,7 +163,7 @@ nav {
 /*------------------------------------------*/
 
 .skills-section {
-  background: $primary-color;
+  background: $primary-color; 
 
   h1 {
     font-size: 4rem;
@@ -172,7 +171,7 @@ nav {
   }
 
   .skills {
-    max-width: 1024px;
+    max-width: 1080px;
     margin: 20px auto;
     color: $accent-color;
     li {

@@ -2,7 +2,7 @@
 @media only screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
-  }
+  }  
 
   .navbar .container {
     display: grid;
@@ -16,8 +16,7 @@
     position: unset;
     height: auto;
     width: 100%;
-    padding: 0;
-
+    padding: 0;    
     ul {
       display: flex;
     }
@@ -26,10 +25,9 @@
       font-size: 0.9em;
       font-weight: bold;
     }
-
-    ul.primary-nav {
+    ul.primary-nav {     
       margin: 0;
-    }
+    }    
   }
 
   .hero .container {
@@ -53,6 +51,14 @@
       width: auto;
     }
   }
+ 
+  .skills{
+    display: flex;
+    flex-flow: column wrap;
+    h1{
+      margin: 0;
+    }
+  }
 
   .project-section div {
     display: flex;
@@ -61,7 +67,7 @@
 
     .project {
       width: 30%;
-      margin-bottom: 30px;
+      margin-bottom: 1.875rem;
       p {
         font-size: 0.875rem;
         line-height: 1.25;

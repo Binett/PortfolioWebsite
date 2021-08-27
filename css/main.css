@@ -18,6 +18,7 @@ li a {
 }
 li a:hover {
   font-weight: bold;
+  color: #eece1a;
 }
 
 ul,
@@ -147,7 +148,7 @@ nav ul.primary-nav {
   text-shadow: 5px 5px rgba(0, 0, 0, 0.3);
 }
 .skills-section .skills {
-  max-width: 1024px;
+  max-width: 1080px;
   margin: 20px auto;
   color: #fff;
 }
@@ -388,6 +389,14 @@ footer .container img {
     width: auto;
   }
 
+  .skills {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .skills h1 {
+    margin: 0;
+  }
+
   .project-section div {
     display: flex;
     flex-flow: wrap;
@@ -395,7 +404,7 @@ footer .container img {
   }
   .project-section div .project {
     width: 30%;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
   }
   .project-section div .project p {
     font-size: 0.875rem;
