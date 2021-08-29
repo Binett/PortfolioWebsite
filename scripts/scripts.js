@@ -125,7 +125,6 @@ function getWeather(api) {
       return response.json();
     })
     .then((data) => {
-      console.log(data);
       temperatureDegree.textContent =
         Math.round(parseFloat(data.main.temp) - 273.15) + "°C";
       locationName.textContent = data.name;
@@ -133,3 +132,30 @@ function getWeather(api) {
       iconBtn.innerHTML = `<img src="images/weather-icons/${data.weather[0].icon}.png">`;
     });
 }
+
+//Scroll event for the skillbar
+
+const htmlBar = document.querySelector(".html");
+const cssBar = document.querySelector(".css");
+const jsBar = document.querySelector(".javascript");
+
+
+window.onscroll = () => {
+  const Ypos = window.pageYOffset;
+  if (Ypos > 370) {
+    htmlBar.classList.add("show");
+    cssBar.classList.add("show");
+    jsBar.classList.add("show");
+  }
+  if (Ypos <200) {
+    htmlBar.classList.remove("show");
+    cssBar.classList.remove("show");
+    jsBar.classList.remove("show");
+  }
+  if (Ypos > 1200) {
+    htmlBar.classList.remove("show");
+    cssBar.classList.remove("show");
+    jsBar.classList.remove("show");
+  }
+};
+

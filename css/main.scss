@@ -193,16 +193,28 @@ li {
         background: $secondary-color;
       }
       .html {
-        width: 90%;
-        animation: html 2s;
+        visibility: hidden;
+        &.show{
+          visibility: visible;
+          width: 90%;
+          animation: html 3s;
+        }       
       }
       .css {
-        width: 65%;
-        animation: css 2s;
+        visibility: hidden;
+        &.show{
+          visibility: visible;
+          width: 65%;
+          animation: css 3s;
+        }       
       }
       .javascript {
-        width: 50%;
-        animation: javascript 2s;
+        visibility: hidden;
+        &.show{
+          visibility: visible;
+          width: 50%;
+          animation: javascript 3s;
+        }       
       }
       @keyframes html {
         0% {
