@@ -193,17 +193,38 @@ li {
         background: $secondary-color;
       }
       .html {
-        width: 90%;
-        animation: html 2s;
+        visibility: hidden;
+        &.show{
+          visibility: visible;
+          width: 90%;
+          animation: html 3s;
+        }       
       }
       .css {
-        width: 65%;
-        animation: css 2s;
+        visibility: hidden;
+        &.show{
+          visibility: visible;
+          width: 65%;
+          animation: css 3s;
+        }       
       }
       .javascript {
-        width: 50%;
-        animation: javascript 2s;
+        visibility: hidden;
+        &.show{
+          visibility: visible;
+          width: 50%;
+          animation: javascript 3s;
+        }       
       }
+      .c-sharp {
+        visibility: hidden;
+        &.show{
+          visibility: visible;
+          width: 50%;
+          animation: c-sharp 3s;
+        }       
+      }
+
       @keyframes html {
         0% {
           width: 0%;
@@ -221,6 +242,15 @@ li {
         }
       }
       @keyframes javascript {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 50%;
+        }
+      }
+
+      @keyframes c-sharp {
         0% {
           width: 0%;
         }

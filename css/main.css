@@ -171,19 +171,40 @@ nav li a:hover {
   background: #eece1a;
 }
 .skills-section .skills .bar .html {
+  visibility: hidden;
+}
+.skills-section .skills .bar .html.show {
+  visibility: visible;
   width: 90%;
-  -webkit-animation: html 2s;
-          animation: html 2s;
+  -webkit-animation: html 3s;
+          animation: html 3s;
 }
 .skills-section .skills .bar .css {
+  visibility: hidden;
+}
+.skills-section .skills .bar .css.show {
+  visibility: visible;
   width: 65%;
-  -webkit-animation: css 2s;
-          animation: css 2s;
+  -webkit-animation: css 3s;
+          animation: css 3s;
 }
 .skills-section .skills .bar .javascript {
+  visibility: hidden;
+}
+.skills-section .skills .bar .javascript.show {
+  visibility: visible;
   width: 50%;
-  -webkit-animation: javascript 2s;
-          animation: javascript 2s;
+  -webkit-animation: javascript 3s;
+          animation: javascript 3s;
+}
+.skills-section .skills .bar .c-sharp {
+  visibility: hidden;
+}
+.skills-section .skills .bar .c-sharp.show {
+  visibility: visible;
+  width: 50%;
+  -webkit-animation: c-sharp 3s;
+          animation: c-sharp 3s;
 }
 @-webkit-keyframes html {
   0% {
@@ -226,6 +247,22 @@ nav li a:hover {
   }
 }
 @keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@-webkit-keyframes c-sharp {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes c-sharp {
   0% {
     width: 0%;
   }
