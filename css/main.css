@@ -8,19 +8,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-li a {
-  color: white;
-  text-decoration: none;
-  display: block;
-  padding: 0.5em;
-  font-size: 1.3em;
-  text-align: right;
-}
-li a:hover {
-  font-weight: bold;
-  color: #eece1a;
-}
-
 ul,
 li {
   list-style-type: none;
@@ -107,12 +94,26 @@ nav.show {
 nav ul.primary-nav {
   margin-top: 5em;
 }
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+nav li a:hover {
+  font-weight: bold;
+  color: #eece1a;
+}
 
 /*------------------------------------------*/
 /*              3. HeroSection              */
 /*------------------------------------------*/
 .hero {
   text-align: center;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
 }
 .hero .left-col .subhead {
   text-transform: uppercase;
@@ -373,7 +374,6 @@ footer .container img {
     display: flex;
     justify-content: space-between;
     text-align: left;
-    margin-bottom: 20vh;
   }
   .hero .container .left-col {
     margin: 5em 3em 0 0em;
@@ -425,8 +425,8 @@ footer .container img {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-
-  .contact-right {
+  .contact-section .contact-left, .contact-section .contact-right {
     flex-basis: 50%;
+    margin: 0;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -34,8 +34,6 @@
     display: flex;
     justify-content: space-between;
     text-align: left;
-    margin-bottom: 20vh;
-
     .left-col {
       margin: 5em 3em 0 0em;
       p {
@@ -94,8 +92,9 @@
       flex-wrap: wrap;
       justify-content: space-between;
     }
-  }
-  .contact-right {
-    flex-basis: 50%;
+    .contact-left, .contact-right {
+      flex-basis: 50%;
+      margin: 0;
+    }
   }
 }
