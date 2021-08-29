@@ -15,21 +15,6 @@ body {
   
 }
 
-li {
-  a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 0.5em;
-    font-size: 1.3em;
-    text-align: right;
-    &:hover {
-      font-weight: bold;
-      color: $secondary-color;
-    }
-  }
-}
-
 ul,
 li {
   list-style-type: none;
@@ -120,8 +105,23 @@ nav {
     display: block;
   }
   ul.primary-nav {
-    margin-top: 5em;
+    margin-top: 5em;    
+  }  
+li {
+  a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.5em;
+    font-size: 1.3em;
+    text-align: right;
+    &:hover {
+      font-weight: bold;
+      color: $secondary-color;
+    }
   }
+}
+
 }
 
 
@@ -131,7 +131,8 @@ nav {
 
 .hero {
   text-align: center;
-
+  padding-top: 20vh;
+  padding-bottom: 20vh;
   .left-col {
     .subhead {
       text-transform: uppercase;
