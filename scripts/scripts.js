@@ -138,6 +138,7 @@ function getWeather(api) {
 const htmlBar = document.querySelector(".html");
 const cssBar = document.querySelector(".css");
 const jsBar = document.querySelector(".javascript");
+const csBar = document.querySelector(".c-sharp");
 
 
 window.onscroll = () => {
@@ -146,16 +147,19 @@ window.onscroll = () => {
     htmlBar.classList.add("show");
     cssBar.classList.add("show");
     jsBar.classList.add("show");
+    csBar.classList.add("show");
   }
   if (Ypos <200) {
     htmlBar.classList.remove("show");
     cssBar.classList.remove("show");
     jsBar.classList.remove("show");
+    csBar.classList.remove("show");
   }
-  if (Ypos > 1200) {
+  if (Ypos > 1300) {
     htmlBar.classList.remove("show");
     cssBar.classList.remove("show");
     jsBar.classList.remove("show");
+    csBar.classList.remove("show");
   }
 };
 

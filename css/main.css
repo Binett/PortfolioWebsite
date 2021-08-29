@@ -197,6 +197,15 @@ nav li a:hover {
   -webkit-animation: javascript 3s;
           animation: javascript 3s;
 }
+.skills-section .skills .bar .c-sharp {
+  visibility: hidden;
+}
+.skills-section .skills .bar .c-sharp.show {
+  visibility: visible;
+  width: 50%;
+  -webkit-animation: c-sharp 3s;
+          animation: c-sharp 3s;
+}
 @-webkit-keyframes html {
   0% {
     width: 0%;
@@ -238,6 +247,22 @@ nav li a:hover {
   }
 }
 @keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@-webkit-keyframes c-sharp {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes c-sharp {
   0% {
     width: 0%;
   }

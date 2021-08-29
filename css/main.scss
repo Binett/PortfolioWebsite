@@ -216,6 +216,15 @@ li {
           animation: javascript 3s;
         }       
       }
+      .c-sharp {
+        visibility: hidden;
+        &.show{
+          visibility: visible;
+          width: 50%;
+          animation: c-sharp 3s;
+        }       
+      }
+
       @keyframes html {
         0% {
           width: 0%;
@@ -233,6 +242,15 @@ li {
         }
       }
       @keyframes javascript {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 50%;
+        }
+      }
+
+      @keyframes c-sharp {
         0% {
           width: 0%;
         }
